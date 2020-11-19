@@ -162,6 +162,24 @@ nav .navbar a:hover {
   z-index: -1;
 }
 
+.magic-shadow-sm {
+  position: relative;
+  background: var(--heaven);
+}
+
+.magic-shadow-sm:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 69px;
+  background-image: Url("../icons/shadow-sm.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -20px;
+  z-index: -1;
+}
+
 .flex {
   display: flex;
 }
@@ -209,7 +227,6 @@ header.hero h1 span {
 
 header.hero p {
   font-family: "Raleway-medium";
-  width: 50%;
   line-height: 1.5;
   margin-bottom: 1rem;
 }
@@ -248,4 +265,141 @@ header.hero p {
 
 header.hero button:first-child {
   margin-right: 0.5rem;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+section.top-products {
+  background: var(--light);
+}
+
+.section-heading {
+  font-family: "Raleway-bold";
+  text-align: center;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.section-heading:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-image: url("../icons/hr.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -40px;
+}
+
+section.top-products .food-slider .food-card {
+  background: var(--heaven);
+  padding: 1.5rem 0;
+  border-radius: 4px;
+}
+
+section.top-products .food-slider .food-card .product-image img {
+  width: 80%;
+  height: 200px;
+  object-fit: contain;
+  padding-bottom: 1rem;
+}
+
+hr {
+  border: 1px solid var(--light);
+  opacity: 0.8;
+  margin: 1rem 0;
+}
+
+section.top-products .slider {
+  position: relative;
+}
+
+section.top-products .food-slider .food-card h2 {
+  font-family: "Raleway-bold";
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+}
+
+section.top-products .food-slider .food-card .stars img {
+  margin-right: 0.25rem;
+}
+
+section.top-products .food-slider .food-card .price {
+  font-family: "Raleway-medium";
+  color: var(--danger);
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;
+}
+
+section.top-products .food-slider .food-card button {
+  font-family: "Raleway-medium";
+  color: var(--secondary);
+  background: var(--heaven);
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+section.top-products .food-slider .food-card button img {
+  background: var(--primary);
+  padding: 0.5rem;
+  height: 32px;
+  margin-right: 1.2rem;
+}
+
+section.top-products .food-slider .food-card button:hover {
+  background: var(--primary);
+  color: var(--heaven);
+}
+
+.slick-slide {
+  margin: 0 1.8rem;
+}
+
+.slick-list {
+  margin: 0 -1.8rem;
+}
+
+.slick-track {
+  padding: 1rem 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.top-products .slider-btn {
+  background: var(--primary);
+  padding: 0.35rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.top-products .slider-btn.prev-btn {
+  position: absolute;
+  top: 46%;
+  left: -2rem;
+  z-index: 1;
+}
+
+.top-products .slider-btn.next-btn {
+  position: absolute;
+  top: 46%;
+  right: -2rem;
+  z-index: 1;
+}
+
+.top-products .btn-wrapper {
+  margin-top: 2rem;
 }
